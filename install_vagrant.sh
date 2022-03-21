@@ -14,4 +14,4 @@ vagrant init peru/windows-10-enterprise-x64-eval
 chown root:kvm /dev/kvm
 service libvirtd start
 service virtlogd start
-RUN VAGRANT_DEFAULT_PROVIDER=libvirt vagrant up
+libvirt vagrant up
