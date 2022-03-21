@@ -7,7 +7,7 @@ apt-get install -y qemu-kvm libvirt-daemon-system libvirt-dev
 # apt-get install -y linux-image-$(uname -r)
 apt-get install -y curl net-tools jq
 
-apt-get autoremove
+apt-get autoremove -y
 
 curl -O https://releases.hashicorp.com/vagrant/$(curl -s https://checkpoint-api.hashicorp.com/v1/check/vagrant  | jq -r -M '.current_version')/vagrant_$(curl -s https://checkpoint-api.hashicorp.com/v1/check/vagrant  | jq -r -M '.current_version')_x86_64.deb
 dpkg -i vagrant_$(curl -s https://checkpoint-api.hashicorp.com/v1/check/vagrant  | jq -r -M '.current_version')_x86_64.deb
