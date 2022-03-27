@@ -3,7 +3,7 @@
 # must be run as root
 
 apt-get update -y
-apt-get install -y qemu-kvm libvirt-daemon-system libvirt-dev
+apt-get install -y qemu-kvm libvirt-daemon-system libvirt-dev build-essential
 # apt-get install -y linux-image-$(uname -r)
 apt-get install -y curl net-tools jq
 
